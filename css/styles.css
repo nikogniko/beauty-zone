@@ -1,0 +1,55 @@
+/* Fonts */
+/* play-700 */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* roboto-regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+}
+/* roboto-500 */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url('../fonts/roboto-v32-cyrillic_latin-500.woff2') format('woff2');
+}
+/* roboto-700 */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* Base */
+:root {
+  --color-primary-white: #ffffff;
+  --color-brand-light: #2b7fff;
+  --color-brand-dark: #011c44;
+  --color-secondary-light: #747272;
+  --color-secondary-dark: #4a4a4a;
+  --color-accent: #ffd02b;
+}
+
+body {
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
