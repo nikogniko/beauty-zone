@@ -40,6 +40,8 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -52,4 +54,15 @@ a {
 
 address {
   font-style: normal;
+}
+
+/* Navigation */
+.logo-link {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  /* line-height: 21px; */
+  line-height: 95%;
+  text-transform: capitalize;
+  color: var(--color-brand-light);
 }
