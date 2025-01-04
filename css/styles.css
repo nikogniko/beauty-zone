@@ -42,6 +42,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  color: var(--color-brand-dark);
 }
 
 ul {
@@ -56,13 +58,140 @@ address {
   font-style: normal;
 }
 
+/* Utils */
+.centered {
+  text-align: center;
+}
+
+/* Button */
+.button {
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  padding: 16px 32px;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-primary-white);
+}
+
+.button:hover,
+.button:focus {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.button-caption {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-secondary-dark);
+}
+
+.button-caption a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.button-caption a:hover,
+.button-caption a:focus {
+  color: var(--color-brand-light);
+}
+
 /* Navigation */
 .logo-link {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  /* line-height: 21px; */
   line-height: 95%;
   text-transform: capitalize;
   color: var(--color-brand-light);
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-brand-dark);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  font-weight: 700;
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+
+.hero-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 81%;
+  text-transform: capitalize;
+  color: var(--color-brand-light);
+}
+
+/* Sections */
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-brand-dark);
+}
+
+.section-title span {
+  color: var(--color-brand-light);
+}
+
+/* About section */
+.about-description {
+  font-size: 22px;
+  line-height: 173%;
+}
+
+.about-description span {
+  font-weight: 600;
+}
+
+/* Advantages section */
+.advantages-card {
+  line-height: 133%;
+  text-align: center;
+}
+
+/* Services section */
+.services-card {
+  font-size: 22px;
+  line-height: 118%;
+  /* color: var(--color-primary-white); */
+}
+
+/* Form */
+
+.form-title {
+  font-weight: 600;
+  font-size: 22px;
+  /* color: var(--color-primary-white); */
+}
+
+.form-title span {
+  color: var(--color-brand-light);
+}
+
+footer .nav-link,
+address a,
+.policy {
+  font-size: 16px;
+  color: var(--color-primary-white);
+}
+
+footer .nav-link:hover,
+footer .nav-link:focus,
+address a:hover,
+address a:focus {
+  color: var(--color-brand-light);
+}
+
+.policy-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-light);
 }
