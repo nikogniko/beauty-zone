@@ -241,6 +241,20 @@ img {
 
 .hero-section {
   padding: 124px 0;
+  background-image: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    image-set(
+      url(../images/hero-background.webp) type('image/webp'),
+      url(../images/hero-background.jpg) type('image/jpeg')
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-section .container {
@@ -248,13 +262,15 @@ img {
 }
 
 .hero-title {
+  max-width: 530px;
+  margin-bottom: 40px;
+
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 140px;
   line-height: 81%;
   text-transform: capitalize;
   color: var(--color-brand-light);
-  margin-bottom: 40px;
 }
 
 .hero-section .button-box {
@@ -266,6 +282,12 @@ img {
 }
 
 /* About section */
+.about-section .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -285,6 +307,25 @@ img {
 
 .about-description span {
   font-weight: 600;
+}
+
+.about-images {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 40px;
+}
+
+.face-before-image,
+.face-after-image {
+  width: 328px;
+  height: 328px;
+  border-radius: 50%;
+}
+
+.face-after-image {
+  justify-self: flex-end;
 }
 
 /* Advantages section */
@@ -371,6 +412,9 @@ img {
 
 .footer-section {
   background-color: var(--color-brand-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-container {
