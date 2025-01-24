@@ -237,6 +237,28 @@ img {
   gap: 30px;
 }
 
+.social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-network-icon {
+  fill: var(--color-brand-dark);
+  width: 32px;
+  height: 32px;
+}
+
+footer .social-network-icon {
+  fill: var(--color-primary-white);
+  width: 42px;
+  height: 42px;
+}
+
+.social-network-icon:hover {
+  fill: var(--color-brand-light);
+}
+
 /* Hero section */
 
 .hero-section {
@@ -349,16 +371,28 @@ img {
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
 }
 
+.advantage-card-icon {
+  fill: var(--color-brand-dark);
+  margin-bottom: 6px;
+}
+
 /* Services section */
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
 
 .services-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px;
 }
 
 .services-item {
-  flex-basis: calc((100% - 32px) / 3);
+  flex-basis: calc((100% - 54px) / 3);
 }
 
 .services-card {
@@ -380,6 +414,33 @@ img {
   font-size: 22px;
   line-height: 118%;
   color: var(--color-primary-white);
+}
+
+/* Carousel buttons */
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0; /* so that the button is not  
+                compressed due to lack of free space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  background-color: transparent;
+  border: 1px solid var(--color-brand-dark);
+  border-radius: 50%;
+
+  fill: var(--color-brand-dark);
+  stroke-width: 2px;
+
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+  fill: var(--color-primary-white);
 }
 
 /* Contacts section */
